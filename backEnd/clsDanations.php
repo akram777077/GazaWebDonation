@@ -1,6 +1,6 @@
 <?php
 include "clsUser.php";
-class Denaions
+class Denaions 
 {
     public static function getTotalDonatins()
     {
