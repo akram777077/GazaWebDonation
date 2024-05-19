@@ -18,5 +18,32 @@ class Denaions
         $conn->close();
         return $row['totalDonations'];
     }
+    public static function getTop3CountriesWithTotalDonations()
+    {
+        $conn = connectDB();
+        $sql = "SELECT c.country_name AS country, ROUND(SUM(d.amount), 2) AS totalDonations
+                FROM users u 
+                INNER JOIN donations d ON u.userName = d.userName
+                INNER JOIN countries c ON u.countryId = c.country_code
+                GROUP BY c.country_code
+                ORDER BY SUM(d.amount) DESC
+                LIMIT 3;";
+        
+        $stmt = $conn->prepare($sql);
+        if ($stmt === false) {
+            die("Prepare failed: " . $conn->error);
+        }
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        $topCountries = [];
+        while ($row = $result->fetch_assoc()) {
+            $topCountries[$row['country']] = $row['totalDonations'];
+        }
+        $stmt->close();
+        $conn->close();
+        return $topCountries;
+    }
+    
 }
 ?>
