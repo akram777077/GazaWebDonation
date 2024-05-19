@@ -8,6 +8,7 @@ class User
     private $flag;
     private $isNew;
     private $totalDonations;
+    private $country;
 
     public function donation($amount)
     {
@@ -68,12 +69,12 @@ class User
         $password = convertToMD5($flag . $password);
     }
 
-    public function __construct($isNew, $userName, $password, $email, $flag = null)
+    public function __construct($isNew, $userName, $password, $email,$country ,$flag = null)
     {
         $this->userName = $userName;
         $this->email = $email;
         $this->isNew = $isNew;
-
+        $this->country = $country;
         if ($isNew) {
             $this->flag = getRandomString(10);
             $this->password = convertToMD5($this->flag . $password);
@@ -142,7 +143,7 @@ class User
         $stmt->close();
         $conn->close();
 
-        return new User(false, $row['userName'], $row['password'], $row['email'], $row['flag']);
+        return new User(false, $row['userName'], $row['password'], $row['email'],$row['countryId'] ,$row['flag']);
     }
 
     public function save()
@@ -157,21 +158,21 @@ class User
                 return -2;
             }
 
-            $sql = "INSERT INTO users (userName, flag, password, email) VALUES (?, ?, ?, ?);";
+            $sql = "INSERT INTO users (userName, flag, password, email,countryId) VALUES (?, ?, ?, ?,?);";
             $stmt = $conn->prepare($sql);
             if ($stmt === false) {
                 die("Prepare failed: " . $conn->error);
             }
 
-            $stmt->bind_param("ssss", $this->userName, $this->flag, $this->password, $this->email);
+            $stmt->bind_param("sssss", $this->userName, $this->flag, $this->password, $this->email,$this->country);
         } else {
-            $sql = "UPDATE users SET password = ?, email = ? WHERE userName = ?;";
+            $sql = "UPDATE users SET password = ?, email = ?,countryId=? WHERE userName = ?;";
             $stmt = $conn->prepare($sql);
             if ($stmt === false) {
                 die("Prepare failed: " . $conn->error);
             }
 
-            $stmt->bind_param("sss", $this->password, $this->email, $this->userName);
+            $stmt->bind_param("ssss", $this->password, $this->email, $this->userName,$this->country);
         }
 
         $result = $stmt->execute();
@@ -188,3 +189,4 @@ class User
         }
     }
 }
+?>
