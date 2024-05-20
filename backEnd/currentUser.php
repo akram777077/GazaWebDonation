@@ -1,0 +1,3 @@
+<?php
+$curretnUser=null;
+?>
