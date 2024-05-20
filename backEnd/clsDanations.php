@@ -44,6 +44,23 @@ class Denaions
         $conn->close();
         return $topCountries;
     }
-    
+    public static function getTheNameOfCountry($codeCountry)
+    {
+        $conn = connectDB();
+        $sql = "SELECT c.country_name
+        FROM countries c 
+        WHERE c.country_code=?;";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("s",$codeCountry);
+        if ($stmt === false) {
+            die("Prepare failed: " . $conn->error);
+        }
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
+        $stmt->close();
+        $conn->close();
+        return $row["country_name"];
+    }
 }
 ?>
