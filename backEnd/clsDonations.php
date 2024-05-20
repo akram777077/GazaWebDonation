@@ -1,6 +1,18 @@
 <?php
 include "clsUser.php";
-class Denaions 
+class Record
+{
+    public $userName;
+    public $amount;
+    public $time;
+    public function __construct($userName, $amount, $time)
+    {
+        $this->userName = $userName;
+        $this->amount = $amount;
+        $this->time = $time;
+    }
+}
+class Donation 
 {
     public static function getTotalDonatins()
     {
@@ -61,6 +73,29 @@ class Denaions
         $stmt->close();
         $conn->close();
         return $row["country_name"];
+    }
+    public static function getLogDonations()
+    {
+        $conn = connectDB();
+        $sql = "SELECT s.idDonation,s.userName,s.amount,s.time
+        from donations s;";
+        
+        $stmt = $conn->prepare($sql);
+        if ($stmt === false) {
+            die("Prepare failed: " . $conn->error);
+        }
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        $rocords = [];
+        while ($row = $result->fetch_assoc()) {
+            $temp = new Record($row['userName'],$row['amount'],$row['time']);
+
+            $rocords[$row['idDonation']] = $temp;
+        }
+        $stmt->close();
+        $conn->close();
+        return $rocords;
     }
 }
 ?>
