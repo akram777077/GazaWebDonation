@@ -1,0 +1,100 @@
+*{
+    padding: px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(41, 40, 40);
+    color: white;
+    height: 1200vh ;
+}
+.container{
+    height: 100%;
+    
+}
+.container header {
+    height: 2%;
+}
+.container header .topheader {
+    padding: 0px 15px  0px 15px;
+    background-color: #CD1B1B;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.container header .topheader .middle-topheader{
+    display: flex;
+    gap: 12px;
+    padding: 0px 110px  0px 0px  ;
+    
+
+    
+}
+.container header .topheader .right-topheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.container header  .navigationbar {
+    padding: 0px 15px  0px 0px ;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    
+}
+li{
+    display: flex;
+    align-items: center;
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li ul:hover a {
+    color: #CD1B1B;
+}
+.container .topcontent{
+    background-color: aqua;
+    height:8% ;
+    background-image: url(../images/Untitled\ design\ \(2\).png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  0px 200px  0px 200px ;
+    gap: 50px;
+    
+}
+.container .topcontent h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.container .topcontent button{
+    background-color: #CD1B1B;
+    
+    font-weight:bolder;
+    font-size: 18px;
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    border: black 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1); 
+
+   
+}
+.container .topcontent button a{
+    text-decoration: none;
+    color: white;
+
+}
+
