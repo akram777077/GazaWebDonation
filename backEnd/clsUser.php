@@ -192,5 +192,28 @@ class User
     {
         return $this->userName;
     }
+    public static function remove($targetUserName)
+    {
+        $conn = connectDB();
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        $sql = "delete from donations
+        where userName=?;";
+        $sql2="delete from users 
+        where userName=?;";
+        $stmt = $conn->prepare($sql);
+        $stmt2=$conn->prepare($sql2);
+        if ($stmt === false || $stmt2 === false) {
+            die("Prepare failed: " . $conn->error);
+        }
+        $stmt->bind_param("s", $targetUserName);
+        $stmt2->bind_param("s",$targetUserName);
+        $stmt->execute();
+        $isRemove =$stmt2->execute();
+        $stmt->close();
+        $conn->close();
+        return $isRemove;
+    }
 }
 ?>
