@@ -188,5 +188,9 @@ class User
             die("Execute failed: " . $stmt->error);
         }
     }
+    public function getUserName()
+    {
+        return $this->userName;
+    }
 }
 ?>
