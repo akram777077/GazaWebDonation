@@ -259,3 +259,194 @@ li ul:hover a {
 
 }
 
+.container .boycott{
+    background-color: rgb(0, 0, 0);
+    height: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60PX;
+    padding:  0px 100px  0px 100px ;
+    font-size: 32px;
+   
+}
+.container .boycott h1{
+    color: #CD1B1B;
+}
+.container .boycott .butns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 100px;
+
+}
+.container .boycott .butns button{
+    background-color: white;
+    height: 70px;
+    width: 200px;
+    color: #CD1B1B;
+    font-size: 32px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid #CD1B1B;
+    font-weight: bolder  ;
+     
+    
+
+
+}
+.container .boycott .butns button:hover{
+    background-color: #CD1B1B;
+    color: white;
+}
+
+.container .donate {
+    
+    background-image: url(../images/Untitled\ design\ \(4\).png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 7%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:  0px 100px  0px 100px ;
+    color: #ffffff;
+    gap: 100px;
+}
+
+
+.container .donate button , .container .topcontent  button {
+    padding: 10px 20px;
+   
+   
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Shining effect on hover */
+  .container .donate  button::before ,  .container .topcontent  button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid transparent ;
+    box-sizing: border-box;
+    animation: shine 2s infinite;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .container .donate  button:hover::before , 
+  .container .topcontent button:hover::before {
+    opacity: 1;
+  }
+  
+
+  
+  /* Animation for the shining effect */
+  @keyframes shine {
+    0% {
+      border-color: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+      border-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      border-color: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+  }
+  .container .donate button{
+    background-color: #CD1B1B;
+    font-size: 32px;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 100px;
+    width: 400px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
