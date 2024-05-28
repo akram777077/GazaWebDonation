@@ -11,6 +11,7 @@ body{
 }
 .container{
     height: 100%;
+    width: 100%;
     
 }
 .container header {
@@ -73,6 +74,7 @@ li ul:hover a {
     align-items: center;
     padding:  0px 200px  0px 200px ;
     gap: 50px;
+    font-size: 20px;
     
 }
 .container .topcontent h1{
@@ -95,6 +97,165 @@ li ul:hover a {
 .container .topcontent button a{
     text-decoration: none;
     color: white;
+
+}
+.container .mid_content{
+    display: flex;
+  background-color: rgb(0, 0, 0);
+    height: 6.5%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding:  0px 200px  0px 200px ;
+    font-size:20px ;
+    font-weight:300;
+
+}
+.container .mid_content h1{
+   color:#CD1B1B ;
+   font-weight: 900;
+}
+
+
+/* image slider */
+.container .img-slider{
+    background-color: #000000;
+    height: 8%;
+    padding:  80px 0px 0px 0px  ;
+  
+  
+    
+}
+
+.container .img-slider .slider-wrapper {
+	position: relative;
+	max-width: 78%;
+	margin: 0 auto;
+    display: flex;
+    gap: 200px;
+}
+
+.container .img-slider .slider-wrapper .slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container .img-slider .slider-wrapper .slider::-webkit-scrollbar {
+	display: none;
+}
+
+.container .img-slider .slider-wrapper .slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.container .img-slider .slider-wrapper .slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.container .img-slider .slider-wrapper .slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+.container .img-slider .slider-wrapper .slider-nav a.active {
+    background-color:#CD1B1B;
+}
+.container .img-slider .slider-wrapper .slider-nav a:hover {
+	opacity: 1;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    z-index: 2;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.container .stats{
+    background-color: rgb(0, 0, 0);
+    height: 6.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px
+    
+    
+}
+.container .stats #numoo{
+    color: #CD1B1B;
+    font-size: 50px;
+    font-weight: bolder;
+   
+}
+.container .stats h1{
+    color: #CD1B1B;
+}
+.container .stats .numbers{
+    
+    height: 77%;
+    margin-top: 40px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 40px;
+    
+}
+.container .stats .numbers .num{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    padding:  0px 30px  0px 30px ;
+    font-size: 28px;
+   
 
 }
 
