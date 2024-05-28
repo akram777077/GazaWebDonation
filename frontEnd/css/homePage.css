@@ -5,7 +5,7 @@
 
 }
 body{
-    background-color: rgb(41, 40, 40);
+    background-color: rgb(0, 0, 0);
     color: white;
     height: 1200vh ;
 }
@@ -216,12 +216,12 @@ li ul:hover a {
 
 .container .stats{
     background-color: rgb(0, 0, 0);
-    height: 6.5%;
+    height: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 100px
+    padding-top: 150px
     
     
 }
@@ -235,10 +235,10 @@ li ul:hover a {
     color: #CD1B1B;
 }
 .container .stats .numbers{
-    
+    background-color: rgb(41, 40, 40);
     height: 77%;
     margin-top: 40px;
-    width: 95%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center; 
