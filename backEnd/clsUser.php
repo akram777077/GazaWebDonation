@@ -172,7 +172,7 @@ class User
                 die("Prepare failed: " . $conn->error);
             }
 
-            $stmt->bind_param("ssss", $this->password, $this->email, $this->userName,$this->country);
+            $stmt->bind_param("ssss", $this->password, $this->email, $this->country,$this->userName);
         }
 
         $result = $stmt->execute();
