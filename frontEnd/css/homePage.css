@@ -393,6 +393,178 @@ li ul:hover a {
 
 
 
+.container .imghover {
+    background-color: rgb(0, 0, 0);
+    height: 12%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px;
+    align-items: center;
+  }
+  .container .imghover h1{
+    color: #CD1B1B;
+    padding-bottom: 50px;
+  }
+  
+  .container .imghover .row {
+    background-color: rgb(0, 0, 0);
+    height: 45%;
+    display: flex;
+    gap: 50px;
+    padding: 0px 40px 0px 40px;
+    ;
+  }
+
+  .container .imghover .row .clmn {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .container .imghover .row .clmn .img-container {
+    position: relative;
+
+    overflow: hidden;
+  }
+  .container .imghover .row .clmn .img-container img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container .imghover .row .clmn .img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .container .imghover .row .clmn .img-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin: 0;
+  }
+  
+  .container .imghover .row .clmn .img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .container .imghover .row .clmn .img-container:hover::before {
+    opacity: 1;
+  }
+  
+  .container .imghover .row .clmn .img-container:hover h2 {
+    opacity: 1;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
