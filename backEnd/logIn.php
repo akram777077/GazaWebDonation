@@ -3,9 +3,9 @@
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
-    if (isset($_GET["singIn"])) {
-        $userName = $_GET["userName"];
-        $password = $_GET["password"];  
+    if (isset($_POST["singIn"])) {
+        $userName = $_POST["userName"];
+        $password = $_POST["password"];  
 
         $_SESSION['currentUser']=user::getUserByUserName($userName);
         if (is_null($_SESSION['currentUser']) || !$_SESSION['currentUser']->isThePasswordCorrect($password)) {
@@ -14,7 +14,7 @@
             header("Location: ../frontEnd/html/homePage.php");
             exit();
         }
-    } else if (isset($_GET["singUp"])) {
-        echo "signUp";
+    } else if (isset($_POST["singUp"])) {
+        
     }
 ?>

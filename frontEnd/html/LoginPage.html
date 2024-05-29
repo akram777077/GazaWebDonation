@@ -21,10 +21,10 @@
                     <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <input type="text" placeholder="user name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <select>
+                <input type="text" placeholder="user name" name="userName">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <select name="country">
                 <option value="AF">Afghanistan</option>
                 <option value="AL">Albania</option>
                 <option value="DZ">Algeria</option>
@@ -275,7 +275,7 @@
             </form>
         </div>
         <div class="form-container sign-in" id="sign-in">
-            <form action="../../backEnd/logIn.php" method="GET">
+            <form action="../../backEnd/logIn.php" method="POST">
                 <h1>Sign In</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
