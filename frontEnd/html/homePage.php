@@ -23,8 +23,20 @@
                    <a href="#"><i class="fa-brands fa-square-x-twitter" style="color: #ffffff; font-size: 2em;"></i></a> 
                 </div>
                 <div class="right-topheader">
-                    <h3>nameOfUser</h3> <!-- Backend should populate this field with the user name --> 
-                    <a href="#"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i></a> 
+                  <?php
+                    include "../../backEnd/currentUser.php";
+                    if(isset($_SESSION['currentUser']))
+                    {
+                    $userName=$_SESSION['currentUser']->getUserName();
+                    echo "<h3>$userName</h3>";
+                    }
+                    else
+                    {
+                      header("Location: LoginPage.html");
+                    }
+                  ?>
+                   <!-- Backend should populate this field with the user name --> 
+                    <a href="./LoginPage.html"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i></a> 
                 </div>
             </div>
             <div class="navigationbar">
