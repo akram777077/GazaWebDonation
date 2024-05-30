@@ -22,7 +22,19 @@
                    <a href="#"><i class="fa-brands fa-square-x-twitter" style="color: #ffffff; font-size: 2em;"></i></a> 
                 </div>
                 <div class="right-topheader">
-                                  <h1>username</h1>     <!-- Backend should populate this field with the user name --> 
+                <?php
+                    include "../../backEnd/currentUser.php";
+                    if(isset($_SESSION['currentUser']))
+                    {
+                    $userName=$_SESSION['currentUser']->getUserName();
+                    echo "<h3>$userName</h3>";
+                    }
+                    else
+                    {
+                      header("Location: LoginPage.html");
+                    }
+                  ?>
+                      <!-- Backend should populate this field with the user name --> 
                     <a href="./LoginPage.html"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i></a> 
                 </div>
             </div>
@@ -32,8 +44,8 @@
                 </div>
                 <div class="righttnav">
                     <li>
-                        <ul><a href="#" style="color: #CD1B1B;">Home</a></ul>
-                        <ul><a href="#">Donate</a></ul>
+                        <ul><a href="homePage.php">Home</a></ul>
+                        <ul><a href="#"  style="color: #CD1B1B;">Donate</a></ul>
                         <ul><a href="#">Contact us</a></ul>
                         <ul><a href="#">My account</a></ul>
                     </li>
@@ -43,7 +55,7 @@
 
         <section >
             <div class="donate">
-                <form action="">
+                <form action="../../backEnd/donnation.php" method="POST">
                     <div class="first"> 
                         <h2>choose an amount</h2>
                         <div class="btns">
@@ -55,12 +67,12 @@
                     </div>
                     <div class="second">
                          <label for="amount"><h2>or enter your own </h2> </label>
-                         <input type="number" name="" id="amount" placeholder="000000000$">
+                         <input type="number" name="amount" id="amount" placeholder="000000000$">
 
                     </div>
                     <div class="third">
-                        <button> REST</button>
-                        <button>DONNATE</button>
+                        <button>REST</button>
+                        <button type="submit" name="donnate">DONNATE</button>
 
                     </div>
                 </form>
