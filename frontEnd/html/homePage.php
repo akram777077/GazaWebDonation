@@ -54,13 +54,13 @@
             </div>
         </header>
         <div class="topcontent">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quod sint, omnis laudantium earum iusto provident temporibus, at eaque libero doloribus est distinctio sapiente officia facilis quo cum obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eveniet, exercitationem odit totam quis natus repellendus consequatur aliquam, animi harum sed quod similique eligendi quae quos voluptatem distinctio est! Debitis sed, magnam vel voluptate nihil sint earum omnis distinctio assumenda ipsum adipisci dicta esse ipsa itaque, eum perspiciatis temporibus nam eligendi cumque expedita dolore repudiandae asperiores qui excepturi! Asperiores dolores est fuga corporis. Molestias, expedita maxime, voluptatibus autem tempora quam ut, nisi sint exercitationem tenetur quidem sit natus. Ut, ullam. Doloribus consectetur harum magnam laborum vero deleniti, eos mollitia, minima sit, illum in esse itaque suscipit voluptate optio dolore dicta.</p>
+            <h1>Gaza has been under occupation since the past</h1>
+            <p>Gaza, a Palestinian territory, faces ongoing conflict due to historical disputes and the Israeli blockade. Governed by Hamas since 2007, it experiences periodic violence with Israel, resulting in humanitarian crises due to restrictions on movement and goods. Efforts to resolve the situation have been challenging amid international calls for peace and humanitarian aid.</p>
             <button><a href="#">MAKE CHANGE</a></button>
         </div>
         <div class="mid_content">
             <h1>The situation in GAZA</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cum magnam cumque corrupti facilis eos, nam ex repellat, unde numquam non inventore, recusandae sunt ea quam id quos amet quae eligendi sed dolores? Doloribus corrupti sint libero, aliquid veritatis cum nulla dicta eos praesentium quam vero eius commodi aliquam voluptatum. Officia omnis inventore consectetur molestias corrupti ducimus aliquam sint in. Nostrum iure reprehenderit quam veniam id maxime debitis. Veniam, provident voluptate. Nisi eligendi deleniti nam consequatur saepe voluptatum odio, eaque dignissimos corrupti fugit praesentium nihil, temporibus enim rerum pariatur maiores omnis repudiandae nostrum officiis placeat? Magnam at impedit accusantium, dolore illum ipsam, quibusdam voluptatibus totam ut accusamus porro eum amet inventore delectus ratione! Nihil numquam nisi repudiandae debitis consequatur illo distinctio sunt, eaque neque, voluptas iure! Ab quod numquam fugit libero veritatis soluta aspernatur nihil sit voluptatibus necessitatibus, dignissimos quasi maiores, deleniti, porro voluptates delectus! Excepturi esse quo amet quaerat, laboriosam temporibus voluptatem quia maiores, possimus nobis, eaque iste. Ad excepturi eum delectus similique soluta reiciendis necessitatibus, accusantium, dolor impedit ipsam eaque cupiditate, vitae omnis possimus debitis cum porro veniam voluptates aut! Ab odio doloribus ipsa excepturi, harum dolorem consectetur aspernatur? Iure deleniti hic laborum. Magnam quaerat ducimus eligendi quasi.</p>
+            <p>In the war, Gaza experiences intense violence characterized by airstrikes from Israel and rocket attacks from Palestinian factions, primarily Hamas. Civilians, including women and children, often bear the brunt of the casualties and destruction. The densely populated area exacerbates the impact, leading to widespread displacement, damage to infrastructure, and loss of life. Humanitarian organizations work to provide aid amidst the chaos, but the situation remains dire, with both sides often accused of violating international humanitarian law.</p>
         </div>
         <div class="img-slider">
             <div class="slider-wrapper">
@@ -86,15 +86,15 @@
             <div class="numbers">
                 <div class="num">
                     <h1>85%</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quam harum voluptates fuga rem minus saepe doloremque ipsam! Odit, voluptatem.</p>
+                    <p>The bombing targets residential areas, resulting in the destruction of homes and buildings. Entire neighborhoods are in ruins, leaving families homeless.</p>
+                </div>
+                <div class="num">
+                    <h1>100%</h1>
+                    <p>Of the people without safety anywhere, there is no shelter or sufficient food</p>
                 </div>
                 <div class="num">
                     <h1>85%</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quam harum voluptates fuga rem minus saepe doloremque ipsam! Odit, voluptatem.</p>
-                </div>
-                <div class="num">
-                    <h1>85%</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quam harum voluptates fuga rem minus saepe doloremque ipsam! Odit, voluptatem.</p>
+                    <p>Targeting citizens and killing innocent children, pregnant women and ordinary citizens</p>
                 </div>
             </div>
         </div>
@@ -104,7 +104,9 @@
                 Act now against companies profiting from the genocide of the palestinanian people 
             </h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dignissimos corporis? Cupiditate, ab ut modi consectetur veniam voluptatem, rerum maxime itaque dolores aspernatur excepturi quam magni nulla autem? Consectetur non necessitatibus tempore nesciunt aspernatur molestias, vitae labore, adipisci iusto ducimus corrupti ex, aliquid ipsa neque sapiente quisquam impedit dolorum vel.
+            Consider boycotting the products or services offered by these companies and encouraging others to do the same.
+Participate in advocacy efforts to pressure governments and international bodies to hold these companies accountable for their actions.
+Donate now and help the children..
             </p>
             <div class="butns">
                <button> SCAN </button>
@@ -168,15 +170,13 @@
            <div class="top">
             <div class="left">
                 <h3>More about us </h3>
-                <p>Lorem ipsum dolor sit amet consectetur. <br>
-                Lorem ipsum dolor sit amet consectetur <br>
-                Lorem ipsum dolor sit amet consecteturbr
+                <p>We always seek humanitarian work <br>and 
+                  help those affected by this war <br>by
+                   gathering the largest number <br>
+                  of helpers and donors together <br>
+                  to change the tragic situation of innocent people.
                 <br>
-                Lorem ipsum dolor sit amet consectetur
-                Lorem <br> ipsum dolor sit amet consectetur
-                Lorem ipsum dolor sit amet consectetur
-                Lorem ipsum <br> dolor sit amet consectetur
-                Lorem ipsum dolor sit <br>amet consectetur.</p>
+                </p>
             </div>
              <div class="right">
                 <img src="../images/ine.png" alt="">
@@ -192,8 +192,8 @@
            </div>
            <hr>
            <div class="buttom">
-              <h6> Lorem ipsum dolor sit amet.</h6>
-              <h6>Lorem ipsum dolor sit amet.</h6>
+              <h6> Do what you can </h6>
+              <h6> gaza.help@gmail.com </h6>
            </div>
           </footer>
 
