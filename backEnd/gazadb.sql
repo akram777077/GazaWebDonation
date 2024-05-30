@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2024 at 04:37 AM
+-- Generation Time: May 30, 2024 at 04:23 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -294,7 +294,7 @@ CREATE TABLE `donations` (
   `amount` decimal(10,0) NOT NULL,
   `time` datetime DEFAULT NULL,
   `idDonation` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ;
 
 --
 -- Dumping data for table `donations`
@@ -302,7 +302,22 @@ CREATE TABLE `donations` (
 
 INSERT INTO `donations` (`userName`, `amount`, `time`, `idDonation`) VALUES
 ('akram', 29894, '2024-05-17 13:38:45', 5),
-('admin', 5000, '2024-05-17 13:46:29', 6);
+('admin', 5000, '2024-05-17 13:46:29', 6),
+('akram', 100, '2024-05-30 11:30:34', 7),
+('admin', 1001, '2024-05-30 11:31:18', 8),
+('admin', 10, '2024-05-30 11:42:05', 9),
+('admin', 10, '2024-05-30 11:42:25', 10),
+('admin', 10, '2024-05-30 11:43:24', 11),
+('admin', 200, '2024-05-30 11:45:54', 12),
+('admin', 300, '2024-05-30 11:46:20', 13),
+('admin', 500, '2024-05-30 11:46:35', 14),
+('admin', 800, '2024-05-30 11:47:10', 15),
+('akram', 400, '2024-05-30 11:47:39', 16),
+('akram', 20, '2024-05-30 11:47:45', 17),
+('akram', 700, '2024-05-30 11:48:58', 18),
+('admin', 300, '2024-05-30 11:52:44', 19),
+('akram', 300, '2024-05-30 11:55:33', 20),
+('admin', 300, '2024-05-30 15:15:43', 22);
 
 -- --------------------------------------------------------
 
@@ -329,8 +344,14 @@ INSERT INTO `users` (`userName`, `flag`, `password`, `email`, `countryId`) VALUE
 ('dsfdf', 'pMsxQmMcKY', '02d693de0d4582c74930b062bb505a1e', 'ew@gmail.com', 'AW'),
 ('formaja', 'TrXNhHdquz', '0edd1f3efc0e4107d3c3ab47cd81dc0f', 'fhtrbt@gmail.com', 'AL'),
 ('kdfkdjfk', 'LYbovHcfhq', '519c60ca0ca6c41933831861379deb32', 'kdkfjd@gmail.com', 'AF'),
+('kdjkf', 'negqVsHusY', '0c021a111a414f14ec56d7f3ada33b4d', 'kkdkfk@kfdk.com', 'AT'),
+('kjfkdjkkdjkdj', 'SHuiWuofUQ', '47b595d3ef2ec6504c0e7ab9b6964016', 'kdkfkd@gmail.com', 'AF'),
+('kjkkkjf', 'WHsiLiReer', 'abf9d0aea7463f40fd9a92d10efe0fe8', 'kkdkfkdj@gmail.com', 'AF'),
+('ksi23', 'GuxDbjezMw', '3b66f05d3879c3e2a25f5f9abe948a3f', 'kfk@j.com', 'AF'),
 ('salim', 'EMvOtgdfYA', 'f26d55c4843af60af2690beb0f2040b9', 'somthing@gmail.com', 'AL'),
 ('salima', 'ICplvccTXT', 'b3e17f1a7957cc7eeb150956be0fd11c', 'salima@gmail.com', 'BD'),
+('sifo', 'OAlOmNzywW', '70024a33705aa2a8addd57b3b4936cb7', 'kfkj@gmail.com', 'AF'),
+('sliman', 'xwOpVWfsND', '02867914b1f5ef3b9dd81d11334d70df', 'kkfdkfj@gmail.com', 'AF'),
 ('testInput', 'NLbJHumWwL', 'e41f72933bcbd361e83e816460ef1696', 'ewfdfe@gmail.com', 'DZ'),
 ('tkjkjdkj', 'kJhjqzheMm', 'bb5ba720bd9f3b5f6f3fcf4d9b7dbe8e', 'kdkjkf@gmail.com', 'AL'),
 ('yes', 'MOKZrusRgF', '173170cc87ae14e32c25aad03c2f62e4', 'kfkdj@gmail.com', 'DZ');
@@ -367,7 +388,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `donations`
 --
 ALTER TABLE `donations`
-  MODIFY `idDonation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idDonation` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
