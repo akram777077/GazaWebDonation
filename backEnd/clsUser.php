@@ -12,6 +12,10 @@ class User
 
     public function donation($amount)
     {
+        if($amount<1)
+        {
+            return 0;
+        }
         $this->totalDonations += $amount;
         $conn = connectDB();
         $sql = "INSERT INTO donations (userName, amount, time) 
