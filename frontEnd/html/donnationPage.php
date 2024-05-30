@@ -86,15 +86,13 @@
             <div class="top">
              <div class="left">
                  <h3>More about us </h3>
-                 <p>Lorem ipsum dolor sit amet consectetur. <br>
-                 Lorem ipsum dolor sit amet consectetur <br>
-                 Lorem ipsum dolor sit amet consecteturbr
-                 <br>
-                 Lorem ipsum dolor sit amet consectetur
-                 Lorem <br> ipsum dolor sit amet consectetur
-                 Lorem ipsum dolor sit amet consectetur
-                 Lorem ipsum <br> dolor sit amet consectetur
-                 Lorem ipsum dolor sit <br>amet consectetur.</p>
+                 <p>We always seek humanitarian work <br>and 
+                  help those affected by this war <br>by
+                   gathering the largest number <br>
+                  of helpers and donors together <br>
+                  to change the tragic situation of innocent people.
+                <br>
+            </p>
              </div>
               <div class="right">
                  <img src="../images/ine.png" alt="">
@@ -110,8 +108,8 @@
             </div>
             <hr>
             <div class="buttom">
-               <h6> Lorem ipsum dolor sit amet.</h6>
-               <h6>Lorem ipsum dolor sit amet.</h6>
+               <h6> Do what you can </h6>
+               <h6> gaza.help@gmail.com </h6>
             </div>
            </footer>
  
