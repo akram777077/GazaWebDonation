@@ -67,7 +67,7 @@
                     </div>
                     <div class="second">
                          <label for="amount"><h2>or enter your own </h2> </label>
-                         <input type="number" name="amount" id="amount" placeholder="000000000$">
+                         <input type="number" name="amount" id="amount" placeholder="000000000$" min="1">
 
                     </div>
                     <div class="third">
