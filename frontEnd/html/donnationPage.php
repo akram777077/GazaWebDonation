@@ -59,19 +59,24 @@
                     <div class="first"> 
                         <h2>choose an amount</h2>
                         <div class="btns">
-                            <button>100$</button>
-                            <button>500$</button>
-                            <button>1000$</button>
-                            <button>2000$</button>
+                            <button type="button" onclick="changeInputValue('100')">100$</button>
+                            <button type="button" onclick="changeInputValue('500')">500$</button>
+                            <button type="button" onclick="changeInputValue('1000')">1000$</button>
+                            <button type="button" onclick="changeInputValue('2000')">2000$</button>
                         </div>
                     </div>
                     <div class="second">
                          <label for="amount"><h2>or enter your own </h2> </label>
                          <input type="number" name="amount" id="amount" placeholder="000000000$" min="1">
+                         <p>total donations: 
+                            <?php
+                                echo $_SESSION['currentUser']->getTotalDonations()."$";
+                            ?>
+                         </p>
 
                     </div>
                     <div class="third">
-                        <button>REST</button>
+                        <button type="button" onclick="changeInputValue('1')">REST</button>
                         <button type="submit" name="donnate">DONNATE</button>
 
                     </div>
@@ -116,6 +121,6 @@
 
 
     </div>
-    
+    <script src="../js/donnationPage.js"></script>
 </body>
 </html>
