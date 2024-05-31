@@ -1,6 +1,5 @@
 <?php
 include "clsUser.php";
-session_start();
 
 class currentUser
 {

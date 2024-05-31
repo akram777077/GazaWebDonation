@@ -1,8 +1,6 @@
 <?php
-    include "currentUser.php";
-    if (session_status() === PHP_SESSION_NONE) {
+    include "clsUser.php";
         session_start();
-    }
     if (isset($_POST["singIn"])) {
         $userName = $_POST["userName"];
         $password = $_POST["password"];  

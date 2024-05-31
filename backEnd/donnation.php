@@ -1,8 +1,6 @@
 <?php
-include "currentUser.php";
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+include "clsUser.php";
+session_start();
 if (isset($_POST["donnate"])) {
     $result=$_SESSION['currentUser']->donation($_POST["amount"]);
     if ($result) {

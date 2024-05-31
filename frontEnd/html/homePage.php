@@ -1,3 +1,7 @@
+<?php
+include "../../backEnd/clsUser.php";
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,15 +28,15 @@
                 </div>
                 <div class="right-topheader">
                   <?php
-                    include "../../backEnd/currentUser.php";
                     if(isset($_SESSION['currentUser']))
                     {
-                    $userName=$_SESSION['currentUser']->getUserName();
-                    echo "<h3>$userName</h3>";
+                      $userName=$_SESSION['currentUser']->getUserName();
+                      echo "<h3>". $userName."</h3>";
                     }
                     else
                     {
                       header("Location: LoginPage.html");
+                      exit();
                     }
                   ?>
                    <!-- Backend should populate this field with the user name --> 
