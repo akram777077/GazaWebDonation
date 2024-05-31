@@ -76,7 +76,7 @@
 
                     </div>
                     <div class="third">
-                        <button type="button" onclick="changeInputValue('1')">REST</button>
+                        <button type="reset">RESET</button>
                         <button type="submit" name="donnate">DONNATE</button>
 
                     </div>
