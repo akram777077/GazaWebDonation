@@ -188,29 +188,30 @@ if(is_null($_SESSION["currentUser"]))
              ?>
         </tbody>
     </table>
-    <h1>Donation Log</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>user</th>
-                <th>Amount Donated ($)</th>
-                <th>date time</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php 
-                $logDonation=Donation::getLogDonations();
-                foreach ($logDonation as $id => $record) {
-                    echo "<tr>";
-                    echo "<td>" . $record->userName . "</td>";
-                    echo "<td>" . $record->amount . "</td>";
-                    echo "<td>" . $record->time . "</td>";
-                    echo "</tr>";
-                }
-             ?>
-        </tbody>
-    </table>
-
+    <div  <?php echo ($_SESSION['currentUser']->getUserName()=='admin')?"":"hidden"?>>
+        <h1>Donation Log</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>user</th>
+                    <th>Amount Donated ($)</th>
+                    <th>date time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+                    $logDonation=Donation::getLogDonations();
+                    foreach ($logDonation as $id => $record) {
+                        echo "<tr>";
+                        echo "<td>" . $record->userName . "</td>";
+                        echo "<td>" . $record->amount . "</td>";
+                        echo "<td>" . $record->time . "</td>";
+                        echo "</tr>";
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
         <footer>
            <div class="top">
             <div class="left">
