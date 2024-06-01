@@ -261,7 +261,7 @@ $countries = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myAccount</title>
+    <title><?php echo $_SESSION['currentUser']->getUserName();?>-myAccount</title>
     <link rel="stylesheet" href="../css/myAccountPage.css">
     <script src="https://kit.fontawesome.com/cd989df987.js" crossorigin="anonymous"></script>
     <!--for icons -->
@@ -312,7 +312,7 @@ $countries = [
         <main>
             <form action="../../backEnd/editAccount.php" method="POST">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder=<?php echo $_SESSION['currentUser']->getEmail();?> required>
+                <input type="email" id="email" name="email" value=<?php echo $_SESSION['currentUser']->getEmail();?> required>
                 
                 <label for="country">Country:</label>
                 <select id="country" name="country" value required>
