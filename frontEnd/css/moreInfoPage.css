@@ -1,0 +1,120 @@
+*{
+    padding: px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 300vh ;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    
+}
+.container header {
+    height: 7%;
+}
+.container header .topheader {
+    padding: 0px 15px  0px 15px;
+    background-color: #CD1B1B;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.container header .topheader .middle-topheader{
+    display: flex;
+    gap: 12px;
+    padding: 0px 110px  0px 0px  ;
+    
+
+    
+}
+.container header .topheader .right-topheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.container header  .navigationbar {
+    padding: 0px 15px  0px 0px ;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    
+}
+li{
+    display: flex;
+    align-items: center;
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li ul:hover a {
+    color: #CD1B1B;
+}
+
+.container section{
+    background-color: antiquewhite;
+    height: 40%;
+    margin-bottom:  130vh;
+}
+
+
+
+.container footer{
+    background-color: rgb(41, 40, 40) ;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+    gap: 20px;
+    padding-bottom: 20px;
+    
+    
+  }
+  .container footer .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+   
+  }
+  .container footer .top .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .container footer .top .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px ;
+  }
+  .container footer .top .right img{
+   height: 200px;
+   
+   
+  }
+  .container footer .top .right .socialmedia{
+    display: flex;
+    gap: 10px;
+  }
+  .container footer .buttom{
+    display: flex;
+    gap: 800px;
+    padding-left: px;
+  }
