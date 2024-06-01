@@ -22,4 +22,26 @@ if (isset($_POST["editAccount"])) {
         exit();
     }
 }
+else if(isset($_POST["DeleteAccount"]))
+{
+    $currentPassword = $_POST["current-password"];
+    if ($_SESSION["currentUser"]->isThePasswordCorrect($currentPassword)) {
+        
+        if(User::remove($_SESSION["currentUser"]->getUserName()))
+        {
+            $_SESSION["currentUser"]=null;
+        gePageHtml("../frontEnd/html/LoginPage.html","your account is deleted",false);
+
+        exit();
+        }
+        else
+        {
+            gePageHtml("../frontEnd/html/myAccountPage.php","somthing wrong",false);
+            exit();
+        }
+    } else {
+        gePageHtml("../frontEnd/html/myAccountPage.php","the current password is wrong",false);
+        exit();
+    }
+}
 ?>
