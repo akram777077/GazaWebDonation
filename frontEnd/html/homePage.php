@@ -131,19 +131,19 @@ Donate now and help the children..
               <div class="clmn">
                 <div class="img-container">
                   <img src="../images/img hover/Untitled design (5).png" alt="">
-                  <h2>img 1</h2>
+                  <h2>You help Palestinian families who have been displaced lessen hunger by supplying them with nutritious hot meals and fresh produce.</h2>
                 </div>
               </div>
               <div class="clmn">
                 <div class="img-container">
                   <img src="../images/img hover/Untitled design (6).png" alt="">
-                  <h2>img 2</h2>
+                  <h2>You supply winter clothing and blankets to families who have lost everything, providing some warmth during winter.</h2>
                 </div>
               </div>
               <div class="clmn">
                 <div class="img-container">
                   <img src="../images/img hover/Untitled design (7).png" alt="">
-                  <h2>img 3</h2>
+                  <h2>You supply winter clothing and blankets to families who have lost everything, providing some warmth during winter.</h2>
                 </div>
               </div>
             </div>
@@ -151,19 +151,19 @@ Donate now and help the children..
               <div class="clmn">
                 <div class="img-container">
                   <img src="../images/img hover/Untitled design (8).png" alt="">
-                  <h2>img 4</h2>
+                  <h2>You supply winter clothing and blankets to families who have lost everything, providing some warmth during winter</h2>
                 </div>
               </div>
               <div class="clmn">
                 <div class="img-container">
                   <img src="../images/img hover/Untitled design (9).png" alt="">
-                  <h2>img 5</h2>
+                  <h2>You supply winter clothing and blankets to families who have lost everything, providing some warmth during winter</h2>
                 </div>
               </div>
               <div class="clmn">
                 <div class="img-container">
                   <img src="../images/img hover/Untitled design (10).png" alt="">
-                  <h2>img 6</h2>
+                  <h2>You enable deliveries and distributions of food, water, medical supplies, and medicines.</h2>
                 </div>
               </div>
             </div>
