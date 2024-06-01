@@ -302,7 +302,7 @@ $countries = [
                     <li>
                         <ul><a href="./homePage.php">Home</a></ul>
                         <ul><a href="donnationPage.php">Donate</a></ul>
-                        <ul><a href="#">Contact us</a></ul>
+                        <ul><a href="./moreInfoPage.php">More info</a></ul>
                         <ul><a href="#" style="color: #CD1B1B;">My account</a></ul>
                     </li>
                 </div>

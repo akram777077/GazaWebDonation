@@ -52,7 +52,7 @@ if(is_null($_SESSION["currentUser"]))
                     <li>
                         <ul><a href="homePage.php">Home</a></ul>
                         <ul><a href="#"  style="color: #CD1B1B;">Donate</a></ul>
-                        <ul><a href="#">Contact us</a></ul>
+                        <ul><a href="./moreInfoPage.php">More info</a></ul>
                         <ul><a href="./myAccountPage.php">My account</a></ul>
                     </li>
                 </div>
