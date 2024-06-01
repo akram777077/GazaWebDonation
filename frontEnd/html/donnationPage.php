@@ -1,6 +1,11 @@
 <?php
 include "../../backEnd/clsUser.php";
 session_start();
+if(is_null($_SESSION["currentUser"]))
+{
+  header("Location: LoginPage.html");
+  exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,19 +32,16 @@ session_start();
                 </div>
                 <div class="right-topheader">
                 <?php
-                    if(isset($_SESSION['currentUser']))
-                    {
                     $userName=$_SESSION['currentUser']->getUserName();
                     echo "<h3>$userName</h3>";
-                    }
-                    else
-                    {
-                      header("Location: LoginPage.html");
-                      exit();
-                    }
                   ?>
                       <!-- Backend should populate this field with the user name --> 
-                    <a href="./LoginPage.html"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i></a> 
+                    <form action="../../backEnd/logOut.php" method="post" id="logoutForm">
+                        <input type="hidden" name="logout" value="1">
+                        <a href="#" onclick="document.getElementById('logoutForm').submit();">
+                            <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>
+                        </a>
+                    </form>
                 </div>
             </div>
             <div class="navigationbar">
