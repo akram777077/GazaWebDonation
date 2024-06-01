@@ -73,7 +73,7 @@ if(is_null($_SESSION["currentUser"]))
                     </div>
                     <div class="second">
                          <label for="amount"><h2>or enter your own </h2> </label>
-                         <input type="number" name="amount" id="amount" placeholder="000000000$" min="1">
+                         <input type="number" name="amount" id="amount" placeholder="000000000$" min="1" required>
                          <p>total donations: 
                             <?php
                                 echo $_SESSION['currentUser']->getTotalDonations()."$";
