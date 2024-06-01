@@ -308,7 +308,10 @@ $countries = [
                 </div>
             </div>
         </header>
-
+            <form action="../../backEnd/editAccount.php" method="POST" <?php echo ($_SESSION['currentUser']->getUserName()=='admin')?"hidden":""?>>
+                <input placeholder="current Password" class="passwordDeleted" type="password" id="current-password" name="current-password" required>
+                <button type="submit" class="deleteButton" name="DeleteAccount">Delete my Acouunt</button>
+            </form>
         <main>
             <form action="../../backEnd/editAccount.php" method="POST">
                 <label for="email">Email:</label>
@@ -328,7 +331,7 @@ $countries = [
                 <label for="current-password">Current Password:</label>
                 <input type="password" id="current-password" name="current-password" required>
                 
-                <button type="submit" name="editAccount">Submit</button>
+                <button type="submit" name="editAccount">Update Infromation</button>
             </form>
         </main>
 

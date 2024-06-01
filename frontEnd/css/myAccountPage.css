@@ -143,7 +143,7 @@ main label {
 }
 
 main input[type="email"],
-main input[type="password"],
+main input[type="password"],.passwordDeleted,
 main select {
     width: 100%;
     padding: 8px;
@@ -153,7 +153,7 @@ main select {
     box-sizing: border-box;
 }
 
-main button[type="submit"] {
+main button[type="submit"],.deleteButton {
     width: 100%;
     padding: 10px;
     background-color: #CD1B1B; /* Change the button color as needed */
@@ -163,7 +163,20 @@ main button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+.deleteButton
+{
+    position: absolute;
+    width: 10%;
+    bottom: 200px;
+    right: 10px
+}
 main button[type="submit"]:hover {
     background-color: #CD1B1B; /* Change the button hover color as needed */
+}
+.passwordDeleted
+{
+    position: absolute;
+    width: 10%;
+    bottom: 230px;
+    right: 10px
 }
