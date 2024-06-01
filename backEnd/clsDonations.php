@@ -97,5 +97,28 @@ class Donation
         $conn->close();
         return $rocords;
     }
+    public static function getTop3UsersWithTotalDonations()
+    {
+        $conn = connectDB();
+        $sql = "select d.userName,sum(d.amount) as totalDonations
+        from donations d 
+        group by d.userName
+        order by sum(d.amount) DESC
+        limit 3;";
+        $stmt = $conn->prepare($sql);
+        if ($stmt === false) {
+            die("Prepare failed: " . $conn->error);
+        }
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        $topUsers = [];
+        while ($row = $result->fetch_assoc()) {
+            $topUsers[$row['userName']] = $row['totalDonations'];
+        }
+        $stmt->close();
+        $conn->close();
+        return $topUsers;
+    }
 }
 ?>
