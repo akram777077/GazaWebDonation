@@ -10,6 +10,11 @@ class User
     private $totalDonations;
     private $country;
 
+    public function update($email,$country)
+    {
+        $this->email = $email;
+        $this->country = $country;
+    }
     public function donation($amount)
     {
         if($amount<1)
@@ -195,6 +200,14 @@ class User
     public function getUserName()
     {
         return $this->userName;
+    }
+    public function getEmail()
+    {
+        return $this->email;
+    }
+    public function getCountry()
+    {
+        return $this->country;
     }
     public static function remove($targetUserName)
     {

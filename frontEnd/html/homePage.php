@@ -54,7 +54,7 @@ if(is_null($_SESSION["currentUser"]))
                         <ul><a href="#" style="color: #CD1B1B;">Home</a></ul>
                         <ul><a href="donnationPage.php">Donate</a></ul>
                         <ul><a href="#">Contact us</a></ul>
-                        <ul><a href="#">My account</a></ul>
+                        <ul><a href="./myAccountPage.php">My account</a></ul>
                     </li>
                 </div>
             </div>

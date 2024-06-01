@@ -1,0 +1,169 @@
+*{
+    padding: px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 300vh ;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    
+}
+.container header {
+    height: 7%;
+}
+.container header .topheader {
+    padding: 0px 15px  0px 15px;
+    background-color: #CD1B1B;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.container header .topheader .middle-topheader{
+    display: flex;
+    gap: 12px;
+    padding: 0px 110px  0px 0px  ;
+    
+
+    
+}
+.container header .topheader .right-topheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.container header  .navigationbar {
+    padding: 0px 15px  0px 0px ;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    
+}
+li{
+    display: flex;
+    align-items: center;
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li ul:hover a {
+    color: #CD1B1B;
+}
+
+.container section{
+    background-color: antiquewhite;
+    height: 40%;
+    margin-bottom:  130vh;
+}
+
+
+
+.container footer{
+    background-color: rgb(41, 40, 40) ;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+    gap: 20px;
+    padding-bottom: 20px;
+    
+    
+  }
+  .container footer .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+   
+  }
+  .container footer .top .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .container footer .top .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px ;
+  }
+  .container footer .top .right img{
+   height: 200px;
+   
+   
+  }
+  .container footer .top .right .socialmedia{
+    display: flex;
+    gap: 10px;
+  }
+  .container footer .buttom{
+    display: flex;
+    gap: 800px;
+    padding-left: px;
+  }
+  /* styles.css */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #000000; /* Change the background color as needed */
+}
+
+main form {
+    width: 400px; /* Adjust the width as needed */
+    background-color: #000000; /* Change the background color as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a cool effect */
+}
+
+
+
+main label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+main input[type="email"],
+main input[type="password"],
+main select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+main button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #CD1B1B; /* Change the button color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main button[type="submit"]:hover {
+    background-color: #CD1B1B; /* Change the button hover color as needed */
+}
