@@ -115,14 +115,14 @@ Participate in advocacy efforts to pressure governments and international bodies
 Donate now and help the children..
             </p>
             <div class="butns">
-               <button> SCAN </button>
-               <button> BROWSE</button>
+               <button onclick="window.open('https://bdnaash.com', '_blank')"> SCAN </button>
+               <button onclick="window.open('https://boycott.thewitness.news', '_blank')"> BROWSE</button>
             </div>
         </div>
 
         <div class="donate">
             <h1>EMERRGENCY ALERT </h1>
-            <button>DONNATE NOW </button>
+            <button onclick="window.open('./donnationPage.php', '_self')">DONNATE NOW </button>
         </div>
 
         <div class="imghover">
